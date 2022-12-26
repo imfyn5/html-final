@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+        integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script src="./test_data.js"></script>
+    <style>
+        .site-topbar {
+            position: relative;
+            z-index: 110;
+            height: 40px;
+            font-size: 12px;
+            color: #b0b0b0;
+            background: #212121;
+        }
+        .container{
+            width: 1226px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        a:hover{
+            color: rgb(251, 253, 253);
+        }
+        input[type='button']{
+            background:#212121; 
+            color: #b0b0b0; 
+            cursor: pointer;
+            border: 0px；
+        }
+        input[type='button']:hover{
+            background-color: rgb(255, 255, 255); 
+            color: rgb(250, 117, 23); 
+            cursor: pointer;
+        }
+        .shop-categories .nav-category {
+            position: relative;
+            font-weight: 600;
+            height: 100%;
+        }  
+        .shop-categories .categories-wrapper {
+            height: 100%;
+            float: left;
+            margin-left: 44px;
+        }
+        .shop-categories .main-category {
+            font-weight: 600;
+            height: 100%;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        dd, dl, dt, li, ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: inline-block;
+        }
+        .shop-categories .main-category a[href] {
+            cursor: pointer;
+        }
+        .shop-categories .main-category a {
+            transition: color .4s ease;
+            font-size: 16px;
+            color: #424242;
+            margin: 0 15px;
+            cursor: default;
+        }
+        a {
+            color: #757575;
+            text-decoration: none;
+            white-space:pre; 
+            display: inline-block;
+        }
+        .logo{
+            position: relative;
+            width: 56px;
+            height: 100px;
+        }
+        .mi-img-bg{
+            position: relative;
+            width: 56px;
+            left: -20%;
+            top: 30%;
+        }
+        .mi-img{
+            position: absolute;
+            left: 25%;
+            top: 55%;
+            transform: translate(-73%,-46%);
+            width: 120px;
+            transition: .1s;
+        }
+        .mi-img:hover{
+            left: 0;
+            transform: translate(-10%,-46%);
+            transition: .1s;
+        }
+        .gg-img{
+            position: absolute;
+            left: 66px;
+            bottom: 0;
+            z-index: 21;
+            width: 164px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            text-indent: -999em;
+        }
+        .shop-categories .main-category a {
+            transition: color .4s ease;
+            font-size: 16px;
+            color: #424242;
+            margin: 0 15px;
+            cursor: default;
+        }
+        dl {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+        .main-category{
+            display: inline-block;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .c1 {
+            background-color: #fff;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .c1>ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .c1>ul>li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            flex-direction: column;
+        }
+
+
+        div>span {
+            background-color: #fff;
+            border: 1px solid #333;
+            padding: 6px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .c1>ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .test {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="site-topbar">
+    <div class="container">
+    
+        <div style="margin: 0px; padding-top: 10px;">
+            <a href>MIUI</a>&nbsp;|&nbsp;<a href="">下載小米商城APP</a>&nbsp;|&nbsp;
+            <a href="">小米積分中心</a>&nbsp;|&nbsp;
+            <a href="">登錄送活動</a>&nbsp;|&nbsp;
+            <a href="">小米團購</a>&nbsp;|&nbsp;
+            
+            <div style="float: right;">
+                <a href="">登入</a>&nbsp;|&nbsp;<a href="">註冊</a>&nbsp;|&nbsp;
+                <input type="button" value="購物車(0)" >
+            
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="container">
+        <div class="logo">
+            <img id="" src="mi-logo-bg.svg" class="mi-img-bg"><img src="mi-logo.svg" class="mi-img">
+            <div class="categories-wrapper J_navMainList">
+                <img src=lingquan-pc.gif class="gg-img">
+                <dl class="nav-item">                
+    </div>
+    <div class="container">
+        <div class="test">
+            <span data-i="1" class="test_span">Xiaomi手機</span>
+            <span data-i="2" class="test_span">Redmi手機</span>
+            <span data-i="3" class="test_span">POCO手機</span>
+            <span data-i="4" class="test_span">智慧家庭</span>
+            <span data-i="5" class="test_span">配件</span>
+            <span data-i="6" class="test_span">服務</span>
+            <input type="text" width="100%"  value="">
+         
+            
+        </div>
+        <div class="c1">
+            <ul>
+                <li>
+                    <img src="https://i01.appmifile.com/webfile/globalimg/summer-1/pic/12u-Silver.png?width=140&height=140"
+                        alt="">
+                    <span>Xiaomi 12T Pro</span>
+                    <span>NT$19,999</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/活動/圖片1.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="img/活動/圖片2.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="img/活動/圖片3.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="img/活動/圖片4.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="img/活動/圖片5.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="img/活動/圖片6.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="img/活動/圖片7.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="img/活動/圖片8.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="img/活動/圖片9.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="img/活動/圖片10.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="img/活動/圖片111.jpg" alt="" srcset=""></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+</body>
+
+<script>
+    
+
+    $('.test_span').mousemove(function (e) {
+        $(".c1").empty('')  
+        $('.c1').css("display", "flex")
+
+        console.log(e.target)
+
+
+        let Millet_data = Millet_datas.filter(menu => menu.f1 == $(this)[0].dataset.i)
+
+        if ($('.c1').children('ul').length < Millet_data.length) {
+            Millet_data.forEach(element => {
+                $('.c1').append(
+                    `
+                    <ul data-id="${element.f1}" class="test_span">
+                        <li>
+                            <img src=${element.img} alt="">
+                            <span>${element.name}</span>
+                            <span>${element.price}</span>
+                        </li>
+                    </ul>
+                    `
+                )
+            });
+        }
+        Millet_data = []
+    })
+
+    $('.test_span').mouseout(function () {
+        $('.c1').css("display", "flex")
+    });
+
+    $('.c1').mousemove(function () {
+        $('.c1').css("display", "flex")
+    })
+    $('.c1').mouseout(function () {
+        $('.c1').css("display", "none")
+    })
+</script>
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/all.js"></script>
+</html>
